@@ -12,6 +12,7 @@ const UserSchema = new Schema(
         gender: { type: String, enum: ["male", "female", "other"] },
         address: { type: String, maxLength: 255 },
         image: { type: String, maxLength: 4000 },
+        description: { type: String },
     },
     {
         timestamps: true,
