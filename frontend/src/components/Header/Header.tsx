@@ -10,15 +10,6 @@ const authItems = ["Log in", "Sign up"];
 const hostItems = ["Host your home", "Host an experience", "Help"];
 
 function Header() {
-    const [showTippy, setShowTippy] = useState<boolean>(false);
-
-    const handleShowTippy = () => {
-        setShowTippy(!showTippy);
-    };
-
-    // const renderItems = (attrs: any) => (
-
-    // );
 
     return (
         <header className="flex justify-between items-center py-5 border-b-[1px] border-b-[#ccc]">
@@ -60,7 +51,7 @@ function Header() {
                         </div>
                     )}
                 >
-                    <button onClick={handleShowTippy} className="flex items-center px-[12px] py-[5px] rounded-[999px] border-solid border-[1px] border-[#DDDDDD] hover:shadow-[0_2px_4px_rgba(0,0,0,0.18)]">
+                    <button className="flex items-center px-[12px] rounded-[999px] border-solid border-[1px] border-[#DDDDDD] hover:shadow-[0_2px_4px_rgba(0,0,0,0.18)]">
                         <FontAwesomeIcon icon={faBars} className="mr-2" />
                         <img src={Images.avatar} alt="avatar" className="w-[30px] h-[30px]" />
                     </button>
