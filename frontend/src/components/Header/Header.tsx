@@ -32,12 +32,12 @@ function Header() {
                 <button className="w-[48px] p-[12px] rounded-[50%] hover:bg-[rgb(247,247,247)]">
                     <FontAwesomeIcon icon={faGlobe} />
                 </button>
-                <Tippy interactive hideOnClick placement="top-end" render={(attrs) => (
+                <Tippy interactive hideOnClick trigger="click" placement="top-end" render={(attrs) => (
                     <div className="w-[240px] bg-white rounded-[12px] shadow-[0_2px_16px_rgba(0,0,0,0.12)]" tabIndex={-1} {...attrs} >
                     <div className="py-2">
                         {authItems.map((item, index) => {
                             return (
-                                <Link to="" key={index} className="block px-[12px] py-[16px] bg-transparent hover:bg-[#DDDDDD]">
+                                <Link to="" key={index} className="block p-[12px] bg-transparent hover:bg-[#F7F7F7]">
                                     {item}
                                 </Link>
                             );
@@ -47,7 +47,7 @@ function Header() {
                     <div className="py-2">
                         {hostItems.map((item, index) => {
                             return (
-                                <Link to="" key={index} className="block px-[12px] py-[16px] bg-transparent hover:bg-[#DDDDDD]">
+                                <Link to="" key={index} className="block p-[12px] bg-transparent hover:bg-[#F7F7F7]">
                                     {item}
                                 </Link>
                             );
