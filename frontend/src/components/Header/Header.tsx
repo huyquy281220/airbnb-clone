@@ -1,21 +1,23 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGlobe, faBars } from "@fortawesome/free-solid-svg-icons";
 import Tippy from "@tippyjs/react/headless";
 
 import Images from "../../assets/img";
+import NavbarCenter from "../NavbarCenter";
 
 const authItems = ["Log in", "Sign up"];
 const hostItems = ["Host your home", "Host an experience", "Help"];
 
 function Header() {
-
     return (
         <header className="flex justify-between items-center py-5 border-b-[1px] border-b-[#ccc]">
             <Link to="/">
                 <img src={Images.logo} alt="logo" />
             </Link>
+
+            <NavbarCenter />
+
             <div className="flex">
                 <Link to="" className="p-[12px] rounded-[999px] hover:bg-[rgb(247,247,247)]">
                     Become a host

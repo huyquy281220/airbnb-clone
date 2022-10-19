@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import Modal from "react-modal";
-import "./Footer.css";
+// import "./Footer.css";
 import Images from "../../assets/img";
 
 const Footer: React.FC = () => {
